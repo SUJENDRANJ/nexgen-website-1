@@ -33,32 +33,32 @@ const NavBar = () => {
   };
 
   useEffect(() => {
+    let userInteracted = false;
+
     const handleUserInteraction = () => {
+      if (userInteracted) return;
+
       if (audioElementRef.current && !isAudioPlaying) {
         audioElementRef.current
           .play()
           .then(() => {
             setIsAudioPlaying(true);
             setIsIndicatorActive(true);
+            userInteracted = true;
           })
           .catch((err) => {
             console.warn("Audio autoplay failed:", err);
           });
       }
-
-      window.removeEventListener("click", handleUserInteraction);
-      window.removeEventListener("keydown", handleUserInteraction);
-      window.removeEventListener("scroll", handleUserInteraction);
     };
 
-    window.addEventListener("click", handleUserInteraction);
-    window.addEventListener("keydown", handleUserInteraction);
-    window.addEventListener("scroll", handleUserInteraction);
+    // ✅ Only listen to actual gestures
+    window.addEventListener("click", handleUserInteraction, { once: true });
+    window.addEventListener("keydown", handleUserInteraction, { once: true });
 
     return () => {
       window.removeEventListener("click", handleUserInteraction);
       window.removeEventListener("keydown", handleUserInteraction);
-      window.removeEventListener("scroll", handleUserInteraction);
     };
   }, []);
 
@@ -121,7 +121,7 @@ const NavBar = () => {
               id="product-button"
               title="Products"
               rightIcon={<TiLocationArrow />}
-              containerClass="bg-purple-300 md:flex hidden items-center justify-center !py-2 !px-2"
+              containerClass="bg-purple-300 md:flex hidden items-center justify-center !py-[5px] !px-[7px]"
             />
           </div>
 
