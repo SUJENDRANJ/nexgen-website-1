@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import collection from "./collection";
+import "./gallery.css"; // <-- Add this CSS file for styling
 
 function customSplitText(element, className = "words") {
   const text = element.textContent;

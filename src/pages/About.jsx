@@ -1,7 +1,7 @@
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import Card from "../components/UserCard";
-import Gallery3D from "../components/about/CardRotate";
+import Gallery3D from "../components/user-3d-rotate/3DComponent";
 
 const About = () => {
   return (

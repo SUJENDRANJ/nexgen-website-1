@@ -26,8 +26,8 @@ img {
 
 .gallery {
   position: relative;
-  width: 600px;
-  height: 600px;
+  width: clamp(300px, 60vw, 500px); /* reduce max size */
+  height: clamp(300px, 60vw, 500px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,12 +37,25 @@ img {
 
 .card {
   position: absolute;
-  width: 80px;
-  height: 120px;
+  width: clamp(75px, 5vw, 170px); /* smaller base size */
+  height: clamp(115px, 7vw, 100px);
   border-radius: 8px;
   transform-origin: center;
   will-change: transform;
   transform-style: preserve-3d;
   cursor: pointer;
   overflow: hidden;
+}
+
+/* Optional: make even smaller on larger screens */
+@media screen and (min-width: 900px) {
+  .card {
+    width: clamp(75px, 4vw, 60px);
+    height: clamp(95px, 6vw, 90px);
+  }
+
+  .gallery {
+    width: clamp(300px, 50vw, 450px);
+    height: clamp(300px, 50vw, 450px);
+  }
 }
