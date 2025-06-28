@@ -70,6 +70,88 @@ const collection = [
       },
     ],
   },
+  {
+    title: "Priya M",
+    img: "./img/gallery-3.webp",
+    aboutMe: "UI/UX Designer turning ideas into beautiful user experiences.",
+    link: "https://example.com/priya",
+    socials: [
+      {
+        icon: <FaBehance />,
+        onClick: () => window.open("https://behance.net/priyam", "_blank"),
+      },
+    ],
+  },
+  {
+    title: "Rahul K",
+    img: "./img/gallery-4.webp",
+    aboutMe: "MERN stack enthusiast and open source contributor.",
+    link: "https://example.com/rahul",
+    socials: [
+      {
+        icon: <FaGithub />,
+        onClick: () => window.open("https://github.com/rahul", "_blank"),
+      },
+    ],
+  },
+  {
+    title: "Sujendran J",
+    img: "./img/gallery-5.webp",
+    aboutMe: "Frontend engineer crafting modern, responsive web apps.",
+    link: "https://example.com/sujendran",
+    socials: [
+      {
+        icon: <FaTwitter />,
+        onClick: () => window.open("https://twitter.com/sujendran", "_blank"),
+      },
+      {
+        icon: <FaLinkedin />,
+        onClick: () =>
+          window.open("https://linkedin.com/in/sujendran", "_blank"),
+      },
+    ],
+  },
+  {
+    title: "Priya M",
+    img: "./img/gallery-3.webp",
+    aboutMe: "UI/UX Designer turning ideas into beautiful user experiences.",
+    link: "https://example.com/priya",
+    socials: [
+      {
+        icon: <FaBehance />,
+        onClick: () => window.open("https://behance.net/priyam", "_blank"),
+      },
+    ],
+  },
+  {
+    title: "Rahul K",
+    img: "./img/gallery-4.webp",
+    aboutMe: "MERN stack enthusiast and open source contributor.",
+    link: "https://example.com/rahul",
+    socials: [
+      {
+        icon: <FaGithub />,
+        onClick: () => window.open("https://github.com/rahul", "_blank"),
+      },
+    ],
+  },
+  {
+    title: "Sujendran J",
+    img: "./img/gallery-5.webp",
+    aboutMe: "Frontend engineer crafting modern, responsive web apps.",
+    link: "https://example.com/sujendran",
+    socials: [
+      {
+        icon: <FaTwitter />,
+        onClick: () => window.open("https://twitter.com/sujendran", "_blank"),
+      },
+      {
+        icon: <FaLinkedin />,
+        onClick: () =>
+          window.open("https://linkedin.com/in/sujendran", "_blank"),
+      },
+    ],
+  },
 ];
 
 export default collection;
