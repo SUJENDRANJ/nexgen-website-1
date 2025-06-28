@@ -5,7 +5,7 @@ import Gallery3D from "../components/about/CardRotate";
 
 const About = () => {
   return (
-    <div className="flex justify-center">
+    <div className="bg-black">
       {/* <Card
         name="Sujendran J"
         aboutMe="Passionate Frontend Developer crafting UI/UX magic ✨"
@@ -27,8 +27,7 @@ const About = () => {
               window.open("https://twitter.com/sujendran_dev", "_blank"),
           },
         ]}
-      />
-      <br /> */}
+      /> */}
       <div>
         <Gallery3D />
       </div>

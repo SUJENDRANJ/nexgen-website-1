@@ -1,3 +1,5 @@
+import { FaTwitter, FaLinkedin, FaGithub, FaBehance } from "react-icons/fa";
+
 const collection = [
   {
     title: "Andrea Simmons",
@@ -6,11 +8,11 @@ const collection = [
     link: "https://example.com/andrea",
     socials: [
       {
-        icon: <i className="fab fa-twitter" />,
+        icon: <FaTwitter />,
         onClick: () => window.open("https://twitter.com/andrea", "_blank"),
       },
       {
-        icon: <i className="fab fa-linkedin" />,
+        icon: <FaLinkedin />,
         onClick: () => window.open("https://linkedin.com/in/andrea", "_blank"),
       },
     ],
@@ -22,7 +24,7 @@ const collection = [
     link: "https://example.com/daniel",
     socials: [
       {
-        icon: <i className="fab fa-github" />,
+        icon: <FaGithub />,
         onClick: () => window.open("https://github.com/daniel", "_blank"),
       },
     ],
@@ -34,7 +36,7 @@ const collection = [
     link: "https://example.com/priya",
     socials: [
       {
-        icon: <i className="fab fa-behance" />,
+        icon: <FaBehance />,
         onClick: () => window.open("https://behance.net/priyam", "_blank"),
       },
     ],
@@ -46,7 +48,7 @@ const collection = [
     link: "https://example.com/rahul",
     socials: [
       {
-        icon: <i className="fab fa-github" />,
+        icon: <FaGithub />,
         onClick: () => window.open("https://github.com/rahul", "_blank"),
       },
     ],
@@ -58,11 +60,11 @@ const collection = [
     link: "https://example.com/sujendran",
     socials: [
       {
-        icon: <i className="fab fa-twitter" />,
+        icon: <FaTwitter />,
         onClick: () => window.open("https://twitter.com/sujendran", "_blank"),
       },
       {
-        icon: <i className="fab fa-linkedin" />,
+        icon: <FaLinkedin />,
         onClick: () =>
           window.open("https://linkedin.com/in/sujendran", "_blank"),
       },
