@@ -15,6 +15,40 @@ const menuLinks = [
 ];
 
 const Menu = () => {
+  useEffect(() => {
+    let userInteracted = false;
+
+    const handleUserInteraction = () => {
+      if (userInteracted) return;
+
+      if (audioElementRef.current && !isAudioPlaying) {
+        audioElementRef.current
+          .play()
+          .then(() => {
+            setIsAudioPlaying(true);
+            setIsIndicatorActive(true);
+            userInteracted = true;
+          })
+          .catch((err) => {
+            console.warn("Audio autoplay failed:", err);
+          });
+      }
+    };
+
+    const options = { once: true };
+
+    // ✅ Listen to all relevant gestures
+    window.addEventListener("click", handleUserInteraction, options);
+    window.addEventListener("keydown", handleUserInteraction, options);
+    window.addEventListener("touchstart", handleUserInteraction, options);
+
+    return () => {
+      window.removeEventListener("click", handleUserInteraction);
+      window.removeEventListener("keydown", handleUserInteraction);
+      window.removeEventListener("touchstart", handleUserInteraction);
+    };
+  }, []);
+
   const container = useRef(null);
   const tl = useRef(null);
   const audioRef = useRef(null);

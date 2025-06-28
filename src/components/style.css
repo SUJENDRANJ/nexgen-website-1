@@ -1,0 +1,14 @@
+@keyframes flipTwoTimesCenter {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.animate-flip-2x-center {
+  animation: flipTwoTimesCenter 0.6s ease-out forwards;
+  transform-origin: center;
+  transform-style: preserve-3d;
+}

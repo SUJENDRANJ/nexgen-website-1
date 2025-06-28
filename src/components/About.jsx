@@ -30,7 +30,7 @@ const About = () => {
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          Welcome to Nexgen Nextopia
+          Welcome to Zentry
         </p>
 
         <AnimatedTitle
@@ -39,10 +39,10 @@ const About = () => {
         />
 
         <div className="about-subtext">
-          <p>The Game of Games begins—your life, now a rival starts</p>
+          <p>The Game of Games begins—your life, now an epic MMORPG</p>
           <p className="text-gray-500">
-            Nexgen unites every members from countless platforms, both digital
-            and physical, into a unified Economy
+            Zentry unites every player from countless games and platforms, both
+            digital and physical, into a unified Play Economy
           </p>
         </div>
       </div>

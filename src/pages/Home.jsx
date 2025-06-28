@@ -9,8 +9,8 @@ const Home = () => {
     <>
       <Hero />
       <About />
-      {/* <Features /> */}
-      {/* <Story /> */}
+      <Features />
+      <Story />
       <Contact />
     </>
   );
